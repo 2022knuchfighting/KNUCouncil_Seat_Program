@@ -7,7 +7,7 @@ def get_Now_Council(minimal_N, before_Council):
     times = 1
     while True:
         now_Council = minimal_N*times
-        if(now_Council <= before_Council) :
+        if(now_Council < before_Council) :
             times += 1
         else:
             times -= 1
